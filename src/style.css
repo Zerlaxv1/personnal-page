@@ -5,9 +5,9 @@ html {
   height: 100%;
 }
 
-.rotate10 {
+.rotate10 > * {
   transform: rotate(10deg) translateZ(0); /* Added translateZ(0) for 3D preservation */
-  transform-origin: center center;
+  --transform-origin: center center;
 }
 
 .antirotate10 {
