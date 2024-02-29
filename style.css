@@ -9,10 +9,6 @@ html {
   transform: rotate(10deg);
 }
 
-main {
-  transform: rotate(10deg);
-}
-
 .antirotate10 {
   transform: rotate(-10deg);
 }
