@@ -31,7 +31,10 @@ html {
 
 .div {
   background-size: cover;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   height: 100vh;
 }
 
@@ -44,6 +47,7 @@ html {
   align-items: center; /* Centrage vertical */
   justify-content: center; /* Centrage horizontal */
   height: 100vh; /* Hauteur de la fenêtre visible */
+  overflow: hidden; /* Supprime les barres de défilement */
 }
 
 .image-container {
