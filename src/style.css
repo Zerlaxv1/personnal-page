@@ -3,6 +3,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: black;
 }
 
 .rotate10 > * {
@@ -26,7 +27,7 @@ html {
   justify-content: flex-start; 
   overflow: hidden;
   height: 110vh;
-  will-change: height, flex-grow;
+  will-change: height, flex-grow, transform, filter;
 }
 
 .div {
@@ -41,6 +42,10 @@ html {
 .section:hover {
   flex-grow: 6;
   height: 120vh;
+}
+
+.section:not(:hover) .img{
+  filter: blur(5px);
 }
 
 #main {
@@ -90,7 +95,7 @@ p {
 }
 
 .separateur {
-  height: 100vh;
+  height: 120vh;
   background-color: darkblue;
   width: 2px;
   z-index: 1;
