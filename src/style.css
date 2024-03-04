@@ -3,7 +3,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: rgb(230, 26, 26);
+  background-color: black;
 }
 
 .rotate10 > * {
