@@ -3,7 +3,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: black;
+  background-color: rgb(230, 26, 26);
 }
 
 .rotate10 > * {
@@ -53,11 +53,18 @@ html {
 }
 
 #main {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#divmain {
   display:flex;
   align-items: center; /* Centrage vertical */
   justify-content: center; /* Centrage horizontal */
   height: 100vh; /* Hauteur de la fenêtre visible */
-  overflow: hidden; /* Supprime les barres de défilement */
+  width: 110%;
 }
 
 .image-container {
@@ -122,3 +129,4 @@ p {
   height: 20vh;
   transition: height 0.5s ease;
 }
+
