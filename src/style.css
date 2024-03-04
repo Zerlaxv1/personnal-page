@@ -8,7 +8,7 @@ html {
 
 .rotate10 > * {
   transform: rotate(10deg) translateZ(0); /* Added translateZ(0) for 3D preservation */
-  --transform-origin: center center;
+  transform-origin: center center;
 }
 
 .antirotate10 {
@@ -20,16 +20,6 @@ html {
   height: 100vh;
 }
 
-.section {
-  flex-grow: 1;
-  background-position: center;
-  transition: flex-grow 0.5s, height .5s ease;
-  justify-content: flex-start; 
-  overflow: hidden;
-  height: 110vh;
-  will-change: height, flex-grow, transform, filter;
-}
-
 .div {
   background-size: cover;
   display: flex;
@@ -37,19 +27,6 @@ html {
   justify-content: center;
   flex-direction: column;
   height: 100%;
-}
-
-.section:hover {
-  flex-grow: 6;
-  height: 120vh;
-}
-
-.section:hover .img {
-  filter: blur(0px) brightness(80%);
-}
-
-.section:not(:hover) .img{
-  filter: blur(5px) brightness(40%);
 }
 
 #main {
@@ -71,23 +48,6 @@ html {
   height: auto; /* Supprime la hauteur fixe */
   max-height: 100vh; /* Définit une hauteur maximale */
 }
-/*
-#div1 {
-  background-image: url("image1.jpg");
-}
-
-#div2 {
-  background-image: url("image2.jpg");
-}
-
-#div3 {
-  background-image: url("image3.jpg");
-}
-
-#div4 {
-  background-image: url("image4.jpg");
-}
-*/
 
 h2 {
   text-align: center;
@@ -125,8 +85,34 @@ p {
   transition: height 0.5s ease;
 }
 
+
+
+/*/ Section /*/
+
+.section {
+  flex-grow: 1;
+  background-position: center;
+  transition: flex-grow 0.5s, height .5s ease;
+  justify-content: flex-start; 
+  overflow: hidden;
+  height: 110vh;
+  will-change: height, flex-grow, transform, filter;
+}
+
 .section:hover .icon {
   height: 20vh;
   transition: height 0.5s ease;
 }
 
+.section:hover {
+  flex-grow: 6;
+  height: 120vh;
+}
+
+.section:hover .img {
+  filter: blur(0px) brightness(80%);
+}
+
+.section:not(:hover) .img{
+  filter: blur(5px) brightness(40%);
+}
